@@ -22,10 +22,11 @@
   background-size: cover;
   padding: 2em;
   display: flex;
-  flex-direction: column;
+  flex-direction: row;
+  text-align: left;
+  justify-content: space-around;
   align-items: center;
   color: var(--text-color);
-  text-align: center;
 }
 
 #disclaimer h2,
@@ -103,19 +104,177 @@
   opacity: 1;
 }
 
+/* ____________________________________________________________________ */
+/* Sessão de explorar linhas de motocicleta */
+.explore{
+  text-align: center;
+  padding: 20px;
+  background: var(--secondary);
+  margin: 20px;
+}
+
+.moto{
+  display: flex;
+  flex-direction: row;
+  list-style: none;
+  text-align: center;
+}
+
+.moto img{
+  width: 55%;
+  height: 63%;
+  border-radius: 1000px;
+  padding: 10px;
+}
+
+/* ____________________________________________________________________ */
+/* Sessão de local e destaque */
+.local{
+  background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("../img/hd1.jpg");
+  background-position: center;
+  background-size: cover;
+}
+
+.infos{
+  text-align: center;
+  color: var(--text-color);
+  padding: 50px;
+  list-style: none;
+}
+
+.destaque{
+  text-align: center;
+  padding: 10px;
+  color: var(--text-color);
+}
+
+.destaque h1{
+  padding: 50px;
+  color: var(--primary);
+}
+
+/* ____________________________________________________________________ */
+/* Sessão de frase motivacional sobre motos */
+.liberdade{
+  display: flex;
+  text-align: start;
+  list-style: none;
+  align-items: center;
+}
+
+.liberdade p{
+  display: flex;
+  font-weight: bold;
+  font-size: 25px;
+}
+
+.liberdade li{
+  margin:0;
+  padding: 0;
+}
+
+.cicle img{
+  height: 40%;
+  width: 40%;
+  margin: 40px;
+
+}
+
+/* ____________________________________________________________________ */
+/* Sessão de modelos */
+.modelos{
+  display: flex;
+}
+
+.title{
+  padding: 20px;
+  list-style: none;
+  font-weight: bold;
+}
+
+.list{
+  padding-top: 50px;
+}
+
+.cont{
+  padding: 5px;
+  margin-left: 30px;
+}
+
+.modmoto{
+  width: 40%;
+  height: 40%;
+  margin-left: 500px;
+}
+
+/* ____________________________________________________________________ */
+/* Sessão de feedback */
+.gostou{
+  background:linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("../img/moto2.jpg");
+  background-position: center;
+  background-size: cover;
+  margin-top: 50px;
+}
+
+.sub{
+  text-align: center;
+  color: var(--text-color);
+  padding: 30px;
+}
+
+.but{
+  text-align: center;
+  align-content: center;
+  padding: 10px;
+  padding-left: 50px;
+  padding-right: 50px;
+  background: var(--primary);
+  border: 0;
+  color: var(--text-color);
+  margin-bottom: 20px;
+  margin-left: 40%;
+  cursor: pointer;
+}
+
+button:hover{
+  background: #7b380c;
+}
+
+/* ____________________________________________________________________ */
+/* Sessão do rodapé */
+footer{
+  background: var(--secondary);
+  text-align: center;
+  padding-top: 20px;
+}
+
+.expo{
+  padding-bottom: 10px;
+}
+
+.bold{
+  font-weight: bold;
+}
+
+.about li{
+  padding: 5px;
+  font-size: 12px;
+}
 
 
-/* 1ª Digitação (Aqui) */
+
+
+
 
 
 
 
 /* Media Queries */
-@media (min-width: 768px) {
+@media (max-width: 768px) {
   #event-subscription {
-    flex-direction: row;
+    flex-direction: column;
     justify-content: space-around;
-    text-align: left;
+    text-align: center;
   }
 
   #disclaimer h2 {
@@ -124,6 +283,24 @@
 
   #disclaimer .about-event {
     font-size: 2em;
+  }
+
+  .liberdade p{
+    display: flex;
+    font-weight: bold;
+    font-size: 15px;
+  }
+
+  .modmoto{
+    width: 40%;
+    height: 40%;
+    margin-left: 50px;
+    margin-top: 100px;
+  }
+  
+  .but{
+    margin-bottom: 20px;
+    margin-left: 22%;
   }
 
   
